@@ -1,6 +1,9 @@
-Create a complete TypeScript project that demonstrates the value of shift-left testing with Testcontainers. Here's an example of how to use it to showcase the time difference in bug discovery:
+# User Registration Service Demo
 
-Project Structure:
+A demonstration project showcasing shift-left testing with Testcontainers, focusing on email case-sensitivity bug detection.
+
+## Project Structure
+
 Express.js backend with TypeORM for database access
 Jest for testing
 Testcontainers for integration tests
