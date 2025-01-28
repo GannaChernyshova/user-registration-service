@@ -1,0 +1,20 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+RUN npm install
+
+# Create frontend directory structure
+RUN mkdir -p src/frontend/src
+
+# Copy frontend files
+COPY src/frontend/src/* ./src/frontend/src/
+COPY src/frontend/tsconfig.json ./src/frontend/
+COPY src/frontend/index.html ./src/frontend/
+COPY vite.config.ts .
+
+EXPOSE 5173
+
+CMD ["npm", "run", "dev", "--", "--host"] 
