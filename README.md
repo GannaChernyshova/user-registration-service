@@ -13,7 +13,6 @@ Three levels of tests: Unit, Integration, and E2E
 The Bug:
 Email uniqueness check is case-sensitive
 Could allow duplicate registrations with different cases (e.g., user@example.com and USER@example.com)
-Real-world issue that could cause authentication problems
 
 ## The Bug: Email Case-Sensitivity Issue
 
